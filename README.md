@@ -25,7 +25,9 @@ Level: Intermediate, Advanced
   * For connection to a Twilio based contact center, your web application  will first create a task for the agent (using TaskRouter).  When the next available agent accepts the task, Twilio will initiate a call from the agent desktop (using WebRTC) to the customer’s phone (via global carrier network) and bridge the two party
 
 # High level Architecture:
+![](alexa_twilio_arch_1.001.jpeg)
 
+![](alexa_twilio_arch_1.001.jpeg)
 
 
 # Architectural Components Setup:
@@ -33,16 +35,18 @@ Level: Intermediate, Advanced
   The Alexa custom skills provides speech to text functionality, intent recognition and extraction of attributes from spoken phrases.  These instructions assume you’re familiar with developing Alexa custom skills. 
 
 # Skill Information setup:
+![](alexa_interaction_model_1.png)
 
 # Interaction Model:
   Next, we need to setup and train Alexa with our interaction model.  Your setup will look like this:
 Intent Schema:
-
+![](alexa_interaction_model_2.png)
 
 Custom Slots:
+![](alexa_interaction_model_3.png)
 
 Sample Utterances:
-
+![](alexa_interaction_model_4.png)
 	
 Note: The source model can be found on this github repository 
 
