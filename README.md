@@ -10,7 +10,7 @@ Let's get started...
 # Pre-requisites  
 Amazon Echo (you can buy here: Amazon UK, Amazon US)
 Knowledge of Alexa Custom Skills
-Twilio Account (you can sign up here)
+Twilio Account [Sign up for a Twilio account](https://www.twilio.com/try-twilio)
 Knowledge of Twilio voice API
 
 Level: Intermediate, Advanced
@@ -53,5 +53,5 @@ Note: The source code for the Lambda function can be found on this github reposi
 # Summary
 It’s important to serve customers over newly emerging channels for better customer experience and to differentiate your brand.  Integrating Amazon Echo and Alexa Skills as newer channels into your existing contact center infrastructure is pretty easy.  Twilio provides the critical communication  glue between these consumer devices and your backend contact centre infrastructure.
 
-I hope you found this post helpful.  I look forward to hearing about your use cases.
+I hope you found this post and code helpful.  I look forward to hearing about your use cases.
 
