@@ -1,0 +1,38 @@
+{
+  "intents": [
+    {
+      "intent": "CustomerServiceIntent",
+      "slots": [
+        {
+          "name": "customername",
+          "type": "CUSTOM_NAME"
+        },
+        {
+          "name": "phonenumber",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "department",
+          "type": "CUSTOM_DEPARTMENT"
+        },
+        {
+          "name": "reason",
+          "type": "AMAZON.LITERAL"
+        },
+        {
+          "name": "confirm",
+          "type": "YES_NO"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}
