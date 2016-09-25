@@ -18,10 +18,10 @@ I'll show how using Alexa custom skills and Twilio's APIs you can develop a two 
 Let's get started... 
 
 # Pre-requisites  
-Amazon Echo (you can buy here: [Amazon UK](https://www.amazon.co.uk/dp/B01GAGVIE4), [Amazon US](https://amzn.com/B00X4WHP5E))
-Knowledge of Alexa Custom Skills
-Twilio Account [Sign up for a Twilio account](https://www.twilio.com/try-twilio)
-Knowledge of Twilio voice API
+* Amazon Echo (you can buy here: [Amazon UK](https://www.amazon.co.uk/dp/B01GAGVIE4), [Amazon US](https://amzn.com/B00X4WHP5E))
+* Knowledge of [Alexa Custom Skills](https://developer.amazon.com/edw/home.html#/skills/list)
+* Twilio Account [Sign up for a Twilio account](https://www.twilio.com/try-twilio)
+Knowledge of [Twilio voice API](https://www.twilio.com/voice/api)
 
 Level: Intermediate, Advanced
 
