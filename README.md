@@ -73,4 +73,5 @@ Finally, invoke the Alexa customer callback skill by saying the following to you
 
 # Summary
 It’s important to serve customers over newly emerging channels for better customer experience and to differentiate your brand.  Integrating Amazon Echo and Alexa Skills as newer channels into your existing contact center infrastructure is pretty easy.  Twilio provides the critical communications glue between these consumer devices and your backend contact centre infrastructure.
+
 I hope you found this post helpful.  I look forward to hearing about your use cases.
