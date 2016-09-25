@@ -130,7 +130,7 @@ def handle_session_end_request():
 # List of account names and additional details
 # Replace name and phone numbers
 accounts = {
-    "ameer": [{"phonenumber": "+447477741234",
+    "ameer": [{"phonenumber": "+447477121234",
                 "supportlevel": "Premium"}],
     "simon": [{"phonenumber": "+14155081234",
                 "supportlevel": "Bronze"}]
@@ -260,12 +260,13 @@ def customer_callback_service(intent, session):
                             # Augmentation Type: 2
                             # Call existing contact center over PSTN
                             #
-                            # Replace the value with your call center agent phone number.  E164 format
-                            agent_phone_number = "+<country code><phone number>"
+                            # Replace the value with your call center agent phone number.  E.164 format
+                            agent_phone_number = "+14151234567"
+                            say_language = config.LANGUAGE
                             resp_customer = twiml.Response()
                             resp_customer.pause()
-                            resp_customer.say("Hello, " + session_attributes['customername'], voice="alice")
-                            resp_customer.say("This is a callback from Twilio support. Connecting you to an agent.", voice="alice")
+                            resp_customer.say("Hello, " + session_attributes['customername'], voice="alice", language=say_language)
+                            resp_customer.say("This is a callback from Twilio support. Connecting you to an agent.", voice="alice", language=say_language)
                             # Create the URL that Twilio will request after the customer is called
                             # Use the echo Twimlet to return TwiML that Twilio needs for the call
                             customer_url = "http://twimlets.com/echo?Twiml=" + urllib.quote_plus(str(resp_customer))
@@ -273,9 +274,9 @@ def customer_callback_service(intent, session):
                             # Create Twiml that will be played to the call center agent when the call is answered
                             resp_agent = twiml.Response()
                             resp_agent.pause()
-                            resp_agent.say("Customer " + session_attributes['customername'] + ", Is requesting a callback.", voice="alice")
-                            resp_agent.say(",Reason for their inquiry, " + session_attributes['reason'], voice="alice")
-                            resp_agent.say(",Dialing the customer ", voice="alice")
+                            resp_agent.say("Customer " + session_attributes['customername'] + ", Is requesting a callback.", voice="alice", language=say_language)
+                            resp_agent.say(",Reason for their inquiry, " + session_attributes['reason'], voice="alice", language=say_language)
+                            resp_agent.say(",Dialing the customer ", voice="alice", language=say_language)
                             with resp_agent.dial(callerId = agent_phone_number) as r:
                                 r.number(session_attributes['customer_phonenumber'], url=customer_url)
                             # Create the URL that Twilio will request after the agent is called
