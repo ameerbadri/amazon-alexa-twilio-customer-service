@@ -5,7 +5,7 @@ Today, such streamlined customer journeys are easy to create when we consider au
 
 I'll show how using Alexa custom skills and Twilio's APIs you can develop a two way conversation by collecting relevant context from the customer and then set up a phone callback.  You can connect the customer to your existing contact center (via PSTN phone number or SIP) or into your contact centre built on Twilio.
 
-# The customer journey using Amazon Echo:
+# A possible customer journey using Amazon Echo:
 * Customer initiates the callback service skill by saying: “Alexa ask Twilio customer callback”
 * Alexa interacts and collects the context and reason for callback request from the customer
 * Then Alexa custom skills (via the AWS lambda function) invokes the Twilio server side Python SDK
