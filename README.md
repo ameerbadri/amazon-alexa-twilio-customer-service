@@ -27,7 +27,7 @@ Level: Intermediate, Advanced
 # High level Architecture:
 ![](Signal_London_2016_Building_A_Twilio_Powered_Contact_Center.001.jpeg)
 
-![](Signal_London_2016_Building_A_Twilio_Powered_Contact_Center.001.jpeg)
+![](Signal_London_2016_Building_A_Twilio_Powered_Contact_Center.002.jpeg)
 
 
 # Architectural Components Setup:
